@@ -36,7 +36,7 @@ int main(int argc, char *argv[]) {
         printf("Error: Ambos números no pueden ser cero.\n");
         return 1;
     }
-    // Se llama a la función que calcula el MCD
+    // Se llama a la función que calcula el Máximo común divisor
     int mcd = calcularMCD(num1, num2);
     printf("El máximo común divisor de %d y %d es: %d\n", num1, num2, mcd);
     return 0;
