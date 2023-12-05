@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Nombre: Juan Diego Arce
+# Nombre: Juan Diego Arce C20655
 # Laboratorio 2
 
 def laboratorio2():
