@@ -3,32 +3,42 @@
 // Nombre: Juan Diego Arce
 // Laboratorio 1
 
-void imprimirPiramide(int tamanoBase, int tipo, char caracter) {
+void imprimirPiramide(int tamanoBase, int tipo, char caracter)
+{
     int i;
     int j;
 
-    if (tipo == 1) {
+    if (tipo == 1)
+    {
         // Pirámide normal
-        for (i = 1; i <= tamanoBase; i++) {
+        for (i = 1; i <= tamanoBase; i++)
+        {
             // Espacios en blanco
-            for (j = 1; j <= tamanoBase - i; j++) {
+            for (j = 1; j <= tamanoBase - i; j++)
+            {
                 printf(" ");
             }
             // Caracter de la pirámide
-            for (j = 1; j <= 2 * i - 1; j++) {
+            for (j = 1; j <= 2 * i - 1; j++)
+            {
                 printf("%c", caracter);
             }
             printf("\n");
         }
-    } else {
+    }
+    else
+    {
         // Pirámide invertida
-        for (i = tamanoBase; i >= 1; i--) {
+        for (i = tamanoBase; i >= 1; i--)
+        {
             // Espacios en blanco
-            for (j = 1; j <= tamanoBase - i; j++) {
+            for (j = 1; j <= tamanoBase - i; j++)
+            {
                 printf(" ");
             }
             // Caracter de la pirámide
-            for (j = 1; j <= 2 * i - 1; j++) {
+            for (j = 1; j <= 2 * i - 1; j++)
+            {
                 printf("%c", caracter);
             }
             printf("\n");
@@ -36,11 +46,13 @@ void imprimirPiramide(int tamanoBase, int tipo, char caracter) {
     }
 }
 
-int main() {
+int main()
+{
     int tamanoBase, tipo;
     char caracter;
     char continuar;
-    do {
+    do
+    {
         // Solicita al usuario el tamaño de la pirámide, el caracter a utilizar y el tipo de pirámide
         printf("\nIngrese el tamaño de la base de la pirámide: ");
         scanf("%d", &tamanoBase);
